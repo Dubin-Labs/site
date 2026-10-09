@@ -1,0 +1,2 @@
+# Canonical domain: dubinlabs.com (no www)
+https://www.dubinlabs.com/*  https://dubinlabs.com/:splat  301!
