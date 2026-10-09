@@ -16,7 +16,7 @@
 </head>
 <body>
 
-<header class="site-header on-dark">
+<header class="site-header">
   <div class="wrap">
     <a class="wordmark" href="/">
       <svg class="mark" viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="5" fill="#0F3B45"/><path d="M7.5 6.5h4.5a5.5 5.5 0 0 1 0 11H7.5z" fill="none" stroke="#fff" stroke-width="2"/><circle cx="12" cy="12" r="2" fill="#E3B04B"/></svg>
@@ -31,13 +31,14 @@
 </header>
 
 <main>
-  <section class="hero hero-video">
-    <div class="hero-media" aria-hidden="true">
-      <video autoplay muted loop playsinline preload="auto" poster="/media/hero-2-poster.jpg">
-        <source src="/media/hero-2.mp4" type="video/mp4">
-      </video>
-    </div>
-    <div class="hero-shade" aria-hidden="true"></div>
+  <section class="hero-film" aria-label="Video: a man leaves his office while papers organize themselves and his laptop keeps running automations.">
+    <video autoplay muted loop playsinline preload="auto" poster="/media/hero-2-poster.jpg">
+      <source src="/media/hero-2.mp4" type="video/mp4">
+    </video>
+    <p class="film-caption"><span class="dot" aria-hidden="true"></span>A workday on autopilot</p>
+  </section>
+
+  <section class="hero">
     <div class="wrap">
       <div>
         <h1>Hand the repetitive work to AI. Keep the work that matters.</h1>
@@ -72,15 +73,35 @@
       <h2>What we automate</h2>
       <p class="intro">Every business is different, but the same kinds of work show up everywhere. These are the areas where AI usually saves the most time.</p>
       <ul class="areas">
-        <li><h3>Client communication</h3><p>Inquiries answered quickly and consistently, by email, WhatsApp or your website, with a person stepping in when it matters.</p></li>
+        <li><h3>Client communication</h3><p>Every inquiry by email, WhatsApp or your website gets a fast reply. Common questions are answered automatically, and everything else goes to the right person.</p></li>
         <li><h3>Follow-ups and sales</h3><p>Proposals and quotes followed up on time, so good opportunities don't go quiet.</p></li>
         <li><h3>Scheduling</h3><p>Clients book themselves in, get reminders and reschedule without the back-and-forth.</p></li>
-        <li><h3>Billing and payments</h3><p>Invoices sent and payment reminders handled on schedule.</p></li>
-        <li><h3>Documents and data entry</h3><p>Forms, contracts and notes land in the right place, without anyone retyping them.</p></li>
-        <li><h3>Reports and insights</h3><p>The numbers you check every week, collected and summarized for you.</p></li>
+        <li><h3>Billing and payments</h3><p>Invoices created in the invoicing software you already use, and payment reminders sent on schedule.</p></li>
+        <li><h3>Documents and data entry</h3><p>Forms, contracts and notes are read and filed in the right place, with anything unclear flagged for a person to check.</p></li>
+        <li><h3>Reports and insights</h3><p>The numbers you check every week, pulled from your tools and summarized for you.</p></li>
         <li><h3>Marketing content</h3><p>Posts, newsletters and reviews drafted in your voice, ready for your approval.</p></li>
         <li><h3>An AI assistant for your team</h3><p>A private assistant that knows your procedures and documents and answers your team's questions.</p></li>
       </ul>
+    </div>
+  </section>
+
+  <section class="block trust" id="trust">
+    <div class="wrap">
+      <h2>AI you can trust</h2>
+      <p class="intro">Plenty of business owners are wary of AI, and that's reasonable. Here's how we make sure you can trust everything we build.</p>
+      <ul class="commitments">
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5 4 5.8v5.7c0 4.9 3.4 9 8 10 4.6-1 8-5.1 8-10V5.8z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="m8.5 12 2.4 2.4 4.6-4.8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><div><h3>A person stays in charge</h3><p>Automations follow rules you approve. Anything sensitive or unusual comes to you or your team first.</p></div></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5 4 5.8v5.7c0 4.9 3.4 9 8 10 4.6-1 8-5.1 8-10V5.8z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="m8.5 12 2.4 2.4 4.6-4.8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><div><h3>Business-grade tools only</h3><p>We build on established providers, on business plans whose terms say your data isn't used to train their AI models.</p></div></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5 4 5.8v5.7c0 4.9 3.4 9 8 10 4.6-1 8-5.1 8-10V5.8z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="m8.5 12 2.4 2.4 4.6-4.8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><div><h3>Your data stays yours</h3><p>Access is limited to what's needed, and every client gets a confidentiality and data-processing agreement in line with Israeli privacy law.</p></div></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5 4 5.8v5.7c0 4.9 3.4 9 8 10 4.6-1 8-5.1 8-10V5.8z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="m8.5 12 2.4 2.4 4.6-4.8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><div><h3>You own everything</h3><p>Accounts are set up in your business's name. You can see, pause or switch off any automation at any time.</p></div></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5 4 5.8v5.7c0 4.9 3.4 9 8 10 4.6-1 8-5.1 8-10V5.8z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="m8.5 12 2.4 2.4 4.6-4.8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><div><h3>AI that says it's AI</h3><p>Any assistant that talks to your customers introduces itself as one, and hands over to a person on request.</p></div></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5 4 5.8v5.7c0 4.9 3.4 9 8 10 4.6-1 8-5.1 8-10V5.8z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="m8.5 12 2.4 2.4 4.6-4.8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><div><h3>Start small, prove it</h3><p>We begin with one workflow, measure the result, and only expand when it's clearly working.</p></div></li>
+      </ul>
+      <div class="toolbelt">
+        <p class="toolbelt-label">Built with established, business-grade tools</p>
+        <ul class="tool-names" dir="ltr"><li>Claude by Anthropic</li><li>Google Workspace</li><li>Microsoft 365</li><li>WhatsApp Business Platform</li><li>Make</li></ul>
+        <p class="toolbelt-note">Dubin Labs is independent and not affiliated with these companies.</p>
+      </div>
     </div>
   </section>
 
@@ -105,19 +126,6 @@
           <p>I monitor and refine everything, and add the next improvement when you're ready.</p>
         </li>
       </ol>
-    </div>
-  </section>
-
-  <section class="block" id="principles">
-    <div class="wrap">
-      <h2>How I work</h2>
-      <p class="intro">AI is only useful if you can trust it and your team actually uses it.</p>
-      <ul class="principles">
-        <li><h3>Plain language</h3><p>No jargon. You'll understand what's running in your business and why.</p></li>
-        <li><h3>Your existing tools</h3><p>I build on the email, calendar and software you already have.</p></li>
-        <li><h3>Measurable results</h3><p>We agree what success looks like up front and track it.</p></li>
-        <li><h3>Careful with data</h3><p>Client information stays private, and access is limited to what's needed.</p></li>
-      </ul>
     </div>
   </section>
 
@@ -174,7 +182,7 @@
 
 <script>
   (function () {
-    var v = document.querySelector('.hero-media video');
+    var v = document.querySelector('.hero-film video');
     if (v && window.matchMedia('(prefers-reduced-motion: reduce)').matches) { v.removeAttribute('autoplay'); v.pause(); }
   })();
 </script>
