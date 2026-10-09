@@ -16,7 +16,7 @@
 </head>
 <body dir="rtl">
 
-<header class="site-header on-dark">
+<header class="site-header">
   <div class="wrap">
     <a class="wordmark" href="/he/">
       <svg class="mark" viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="5" fill="#0F3B45"/><path d="M7.5 6.5h4.5a5.5 5.5 0 0 1 0 11H7.5z" fill="none" stroke="#fff" stroke-width="2"/><circle cx="12" cy="12" r="2" fill="#E3B04B"/></svg>
@@ -31,13 +31,14 @@
 </header>
 
 <main>
-  <section class="hero hero-video">
-    <div class="hero-media" aria-hidden="true">
-      <video autoplay muted loop playsinline preload="auto" poster="/media/hero-2-poster.jpg">
-        <source src="/media/hero-2.mp4" type="video/mp4">
-      </video>
-    </div>
-    <div class="hero-shade" aria-hidden="true"></div>
+  <section class="hero-film" aria-label="וידאו: אדם יוצא מהמשרד, הניירת מסתדרת לבד והמחשב ממשיך להריץ אוטומציות.">
+    <video autoplay muted loop playsinline preload="auto" poster="/media/hero-2-poster.jpg">
+      <source src="/media/hero-2.mp4" type="video/mp4">
+    </video>
+    <p class="film-caption"><span class="dot" aria-hidden="true"></span>יום עבודה על טייס אוטומטי</p>
+  </section>
+
+  <section class="hero">
     <div class="wrap">
       <div>
         <h1>תכל'ס: פחות עבודה שחורה, יותר עבודה.</h1>
@@ -69,15 +70,35 @@
       <h2>מה אפשר להעביר לאוטומציה</h2>
       <p class="intro">כל עסק שונה, אבל אותם סוגי עבודה חוזרים בכל מקום. אלה התחומים שבהם AI בדרך כלל חוסך הכי הרבה זמן.</p>
       <ul class="areas">
-        <li><h3>תקשורת עם לקוחות</h3><p>פניות נענות מהר ובעקביות, במייל, בוואטסאפ או באתר, ואדם נכנס לתמונה כשצריך.</p></li>
+        <li><h3>תקשורת עם לקוחות</h3><p>כל פנייה במייל, בוואטסאפ או באתר מקבלת מענה מהיר. שאלות נפוצות נענות אוטומטית, וכל השאר מועבר לאדם הנכון.</p></li>
         <li><h3>מעקב ומכירות</h3><p>הצעות מחיר והצעות עבודה מקבלות מעקב בזמן, כדי שהזדמנויות טובות לא ייעלמו.</p></li>
         <li><h3>תיאום פגישות</h3><p>לקוחות קובעים לבד, מקבלים תזכורות ומשנים מועד בלי הלוך ושוב.</p></li>
-        <li><h3>חשבוניות וגבייה</h3><p>חשבוניות יוצאות ותזכורות תשלום נשלחות לפי לוח זמנים.</p></li>
-        <li><h3>מסמכים והקלדת נתונים</h3><p>טפסים, חוזים והערות מגיעים למקום הנכון, בלי שאף אחד יקליד אותם מחדש.</p></li>
-        <li><h3>דוחות ותובנות</h3><p>המספרים שאתם בודקים כל שבוע, נאספים ומסוכמים בשבילכם.</p></li>
+        <li><h3>חשבוניות וגבייה</h3><p>חשבוניות שמופקות בתוכנת החשבוניות שכבר יש לכם, ותזכורות תשלום שנשלחות בזמן.</p></li>
+        <li><h3>מסמכים והקלדת נתונים</h3><p>טפסים, חוזים והערות נקראים ומתויקים במקום הנכון, וכל דבר לא ברור מסומן לבדיקה של אדם.</p></li>
+        <li><h3>דוחות ותובנות</h3><p>המספרים שאתם בודקים כל שבוע, נאספים מהכלים שלכם ומסוכמים בשבילכם.</p></li>
         <li><h3>תוכן שיווקי</h3><p>פוסטים, ניוזלטרים ובקשות ביקורת שנכתבים בסגנון שלכם ומחכים לאישור.</p></li>
         <li><h3>עוזר AI לצוות</h3><p>עוזר פרטי שמכיר את הנהלים והמסמכים שלכם ועונה על שאלות הצוות.</p></li>
       </ul>
+    </div>
+  </section>
+
+  <section class="block trust" id="trust">
+    <div class="wrap">
+      <h2>AI שאפשר לסמוך עליו</h2>
+      <p class="intro">הרבה בעלי עסקים חוששים מ־AI, ובצדק. ככה אנחנו דואגים שתוכלו לסמוך על כל מה שאנחנו בונים.</p>
+      <ul class="commitments">
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5 4 5.8v5.7c0 4.9 3.4 9 8 10 4.6-1 8-5.1 8-10V5.8z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="m8.5 12 2.4 2.4 4.6-4.8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><div><h3>אדם נשאר בשליטה</h3><p>האוטומציות פועלות לפי כללים שאתם מאשרים. כל דבר רגיש או חריג מגיע קודם אליכם או לצוות.</p></div></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5 4 5.8v5.7c0 4.9 3.4 9 8 10 4.6-1 8-5.1 8-10V5.8z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="m8.5 12 2.4 2.4 4.6-4.8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><div><h3>רק כלים ברמה עסקית</h3><p>אנחנו בונים על ספקים מוכרים, בתוכניות עסקיות שבהן התנאים קובעים שהמידע שלכם לא משמש לאימון מודלים.</p></div></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5 4 5.8v5.7c0 4.9 3.4 9 8 10 4.6-1 8-5.1 8-10V5.8z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="m8.5 12 2.4 2.4 4.6-4.8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><div><h3>המידע שלכם נשאר שלכם</h3><p>גישה רק למה שנדרש, והסכם סודיות ועיבוד מידע עם כל לקוח, בהתאם לחוק הגנת הפרטיות.</p></div></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5 4 5.8v5.7c0 4.9 3.4 9 8 10 4.6-1 8-5.1 8-10V5.8z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="m8.5 12 2.4 2.4 4.6-4.8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><div><h3>הכל בבעלותכם</h3><p>החשבונות נפתחים על שם העסק. אפשר לראות, להשהות או לכבות כל אוטומציה בכל רגע.</p></div></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5 4 5.8v5.7c0 4.9 3.4 9 8 10 4.6-1 8-5.1 8-10V5.8z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="m8.5 12 2.4 2.4 4.6-4.8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><div><h3>AI שמציג את עצמו</h3><p>כל עוזר שמדבר עם הלקוחות שלכם מציג את עצמו ככזה, ומעביר לאדם כשמבקשים.</p></div></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5 4 5.8v5.7c0 4.9 3.4 9 8 10 4.6-1 8-5.1 8-10V5.8z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="m8.5 12 2.4 2.4 4.6-4.8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><div><h3>מתחילים בקטן ומוכיחים</h3><p>מתחילים בתהליך אחד, מודדים את התוצאה, ומרחיבים רק כשברור שזה עובד.</p></div></li>
+      </ul>
+      <div class="toolbelt">
+        <p class="toolbelt-label">בנוי על כלים עסקיים מוכרים</p>
+        <ul class="tool-names" dir="ltr"><li>Claude by Anthropic</li><li>Google Workspace</li><li>Microsoft 365</li><li>WhatsApp Business Platform</li><li>Make</li></ul>
+        <p class="toolbelt-note">Dubin Labs הוא עסק עצמאי שאינו קשור לחברות אלה.</p>
+      </div>
     </div>
   </section>
 
@@ -102,19 +123,6 @@
           <p>אני עוקב ומשפר, ומוסיף את השלב הבא כשאתם מוכנים.</p>
         </li>
       </ol>
-    </div>
-  </section>
-
-  <section class="block" id="principles">
-    <div class="wrap">
-      <h2>איך אני עובד</h2>
-      <p class="intro">AI שווה משהו רק אם אפשר לסמוך עליו והצוות באמת משתמש בו.</p>
-      <ul class="principles">
-        <li><h3>שפה פשוטה</h3><p>בלי ז'רגון. תבינו מה רץ אצלכם בעסק ולמה.</p></li>
-        <li><h3>הכלים שכבר יש לכם</h3><p>אני בונה על המייל, היומן והתוכנות שאתם כבר עובדים איתם.</p></li>
-        <li><h3>תוצאות מדידות</h3><p>מגדירים מראש מה נחשב הצלחה, ועוקבים אחרי זה.</p></li>
-        <li><h3>זהירות עם מידע</h3><p>המידע של הלקוחות שלכם נשאר פרטי, וההרשאות מוגבלות למה שנדרש.</p></li>
-      </ul>
     </div>
   </section>
 
@@ -171,7 +179,7 @@
 
 <script>
   (function () {
-    var v = document.querySelector('.hero-media video');
+    var v = document.querySelector('.hero-film video');
     if (v && window.matchMedia('(prefers-reduced-motion: reduce)').matches) { v.removeAttribute('autoplay'); v.pause(); }
   })();
 </script>
