@@ -464,3 +464,26 @@ body[dir="rtl"] .hero-text .cta-row { justify-content: flex-start; }
   .hero-text .lede { margin-bottom: 24px; }
   .trust-head { grid-template-columns: 1fr; margin-bottom: 32px; }
 }
+
+/* Definition (brand name) */
+.definition { padding: clamp(40px, 7vw, 88px) 0; border-top: 1px solid var(--line); }
+.dict {
+  --serif: "Newsreader", "Frank Ruhl Libre", Georgia, serif;
+  max-width: 760px;
+  margin: 0 auto;
+  padding-inline-start: clamp(18px, 3vw, 32px);
+  border-inline-start: 3px solid var(--gold);
+  font-family: var(--serif);
+  color: var(--ink);
+}
+[dir="rtl"] .dict { --serif: "Frank Ruhl Libre", "Newsreader", Georgia, serif; }
+.dict p { margin: 0; }
+.dict-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px; margin-bottom: 14px !important; }
+.dict-word { font-family: "Newsreader", Georgia, serif; font-size: clamp(40px, 6vw, 64px); font-weight: 500; letter-spacing: -0.01em; line-height: 1; color: var(--petrol); }
+.dict-ipa { font-size: clamp(18px, 2vw, 22px); color: var(--steel); }
+.dict-pos { font-style: italic; font-size: clamp(16px, 1.8vw, 20px); color: var(--steel); }
+[dir="rtl"] .dict-pos { font-style: normal; }
+.dict-sense { font-size: clamp(21px, 2.5vw, 28px); line-height: 1.4; }
+.dict-n { color: var(--gold); font-weight: 500; margin-inline-end: 6px; }
+.dict-note { margin-top: 16px !important; font-family: var(--body); font-size: 16px; line-height: 1.65; color: var(--steel); max-width: 620px; }
+.dict-note em { font-family: "Newsreader", Georgia, serif; font-size: 1.08em; color: var(--ink); }
