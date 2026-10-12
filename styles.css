@@ -487,3 +487,8 @@ body[dir="rtl"] .hero-text .cta-row { justify-content: flex-start; }
 .dict-n { color: var(--gold); font-weight: 500; margin-inline-end: 6px; }
 .dict-note { margin-top: 16px !important; font-family: var(--body); font-size: 16px; line-height: 1.65; color: var(--steel); max-width: 620px; }
 .dict-note em { font-family: "Newsreader", Georgia, serif; font-size: 1.08em; color: var(--ink); }
+
+/* Tool chips with logos */
+.tool-names li { display: inline-flex; align-items: center; gap: 8px; }
+.tool-logo { width: 18px; height: 18px; flex: none; }
+.btn svg { width: 18px; height: 18px; flex: none; }
