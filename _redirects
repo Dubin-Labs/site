@@ -1,2 +1,6 @@
-# Canonical domain: dubinlabs.com (no www)
-https://www.dubinlabs.com/*  https://dubinlabs.com/:splat  301!
+# Canonical domain: otium.agency (old dubinlabs.com forwards here)
+https://dubinlabs.com/*      https://otium.agency/:splat  301!
+http://dubinlabs.com/*       https://otium.agency/:splat  301!
+https://www.dubinlabs.com/*  https://otium.agency/:splat  301!
+http://www.dubinlabs.com/*   https://otium.agency/:splat  301!
+https://www.otium.agency/*   https://otium.agency/:splat  301!
