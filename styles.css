@@ -523,3 +523,5 @@ body[dir="rtl"] .film-overlay .eyebrow { font-size: clamp(16px, 1.5vw, 20px); fo
 .hero-film::after { background: linear-gradient(90deg, rgba(9,36,43,.72) 0%, rgba(9,36,43,.38) 48%, rgba(9,36,43,.08) 80%), linear-gradient(0deg, rgba(9,36,43,.7) 0%, rgba(9,36,43,.15) 60%, rgba(9,36,43,.1) 100%); }
 body[dir="rtl"] .hero-film::after { background: linear-gradient(270deg, rgba(9,36,43,.72) 0%, rgba(9,36,43,.38) 48%, rgba(9,36,43,.08) 80%), linear-gradient(0deg, rgba(9,36,43,.7) 0%, rgba(9,36,43,.15) 60%, rgba(9,36,43,.1) 100%); }
 .commitments svg.scutum { width: 30px; height: 30px; }
+.commitments li { grid-template-columns: 34px minmax(0, 1fr); }
+.commitments svg.scutum { width: 34px; height: 34px; }
