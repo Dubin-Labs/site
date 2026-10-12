@@ -492,3 +492,33 @@ body[dir="rtl"] .hero-text .cta-row { justify-content: flex-start; }
 .tool-names li { display: inline-flex; align-items: center; gap: 8px; }
 .tool-logo { width: 18px; height: 18px; flex: none; }
 .btn svg { width: 18px; height: 18px; flex: none; }
+
+/* ===== Classical theme ===== */
+:root { --serif-display: "Cormorant Garamond", "Frank Ruhl Libre", Georgia, serif; --roman: "Cinzel", "Cormorant Garamond", Georgia, serif; --gold-line: rgba(227,176,75,.55); }
+.wordmark { font-family: var(--roman); font-weight: 600; letter-spacing: .14em; text-transform: uppercase; font-size: 20px; }
+.hero h1, .film-overlay h1, .block h2 { font-family: var(--serif-display); font-weight: 600; letter-spacing: -0.005em; }
+.film-overlay h1 { font-size: clamp(38px, 6vw, 80px); line-height: 1.02; }
+.block h2 { font-size: clamp(34px, 4vw, 50px); line-height: 1.05; }
+.block h2::before { content: ""; display: block; width: 44px; height: 2px; background: var(--gold); margin-bottom: 18px; }
+body[dir="rtl"] .hero h1, body[dir="rtl"] .film-overlay h1, body[dir="rtl"] .block h2 { font-family: "Frank Ruhl Libre", Georgia, serif; font-weight: 700; letter-spacing: 0; }
+section.block, section.definition { border-top: 1px solid var(--gold-line); }
+footer { border-top: 1px solid var(--gold-line); }
+.steps li::before { content: counter(step, upper-roman); width: auto; height: auto; border: 0; border-radius: 0; display: block; font: 600 34px/1 var(--serif-display); color: var(--gold); margin-bottom: 14px; padding-bottom: 12px; border-bottom: 1px solid var(--gold-line); max-width: 56px; }
+footer .motto { font-family: var(--serif-display); font-size: 16px; color: var(--petrol); }
+footer .motto em { font-style: italic; font-weight: 600; }
+.def-grid { display: grid; grid-template-columns: minmax(0, 260px) minmax(0, 1fr); gap: clamp(28px, 5vw, 64px); align-items: center; max-width: 1000px; margin: 0 auto; }
+.def-grid .dict { margin: 0; }
+.def-img { width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 10px; box-shadow: 0 18px 40px -24px rgba(9,36,43,.55); }
+@media (max-width: 760px) {
+  .def-grid { grid-template-columns: 1fr; }
+  .def-img { max-width: 220px; }
+}
+section.block.tight { border-top: 0; }
+.film-overlay .eyebrow { margin: 0 0 14px; font-family: var(--roman); font-weight: 600; font-size: clamp(11px, 1.1vw, 14px); letter-spacing: .22em; text-transform: uppercase; color: var(--gold); }
+body[dir="rtl"] .film-overlay .eyebrow { font-family: "Frank Ruhl Libre", Georgia, serif; letter-spacing: .04em; text-transform: none; font-size: clamp(14px, 1.4vw, 17px); }
+body[dir="rtl"] .film-overlay .eyebrow span { font-family: var(--roman); letter-spacing: .2em; }
+.film-overlay .eyebrow { font-size: clamp(12px, 1.25vw, 16px); text-shadow: 0 1px 10px rgba(0,0,0,.55); }
+body[dir="rtl"] .film-overlay .eyebrow { font-size: clamp(16px, 1.5vw, 20px); font-weight: 500; }
+.film-overlay .eyebrow { color: #F1E3BF; text-shadow: 0 1px 2px rgba(0,0,0,.6), 0 0 18px rgba(0,0,0,.65); }
+.hero-film::after { background: linear-gradient(90deg, rgba(9,36,43,.72) 0%, rgba(9,36,43,.38) 48%, rgba(9,36,43,.08) 80%), linear-gradient(0deg, rgba(9,36,43,.7) 0%, rgba(9,36,43,.15) 60%, rgba(9,36,43,.1) 100%); }
+body[dir="rtl"] .hero-film::after { background: linear-gradient(270deg, rgba(9,36,43,.72) 0%, rgba(9,36,43,.38) 48%, rgba(9,36,43,.08) 80%), linear-gradient(0deg, rgba(9,36,43,.7) 0%, rgba(9,36,43,.15) 60%, rgba(9,36,43,.1) 100%); }
